@@ -33,10 +33,10 @@ export class AppComponent implements OnInit {
   isDescendenteGras: boolean | null = null;
 
   ngOnInit(): void {
-    console.log("DataRaw: " + dataRaw)
+    console.log("DataRaw:" + JSON.stringify(dataRaw, null, 2))
     const data: any = (dataRaw as any).default
-    console.log(data)
-    this.listaComidas = Array.isArray(data) ? data : [];
+    console.log("Data: " + JSON.stringify(data.data, null, 2))
+    this.listaComidas = Array.isArray(data.data) ? data.data : [];
 
     this.listaFiltro = this.listaComidas
   }
