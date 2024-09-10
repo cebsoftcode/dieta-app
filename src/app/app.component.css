@@ -1,0 +1,62 @@
+.parent-component{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.requisitos{
+    padding: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.requisito{
+    padding: 1em;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.tabla-container-pequeño {
+    display: flex;
+    flex-grow: 0;
+    max-height: 200px;
+    overflow-y: auto;
+    width: auto;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+th, td {
+    border:1px solid black;
+}
+
+th {
+    position: sticky;
+    top: 0;
+    background-color: #e78989;
+    z-index: 1;
+}
+
+:host{
+    flex-grow: 0;
+}
+
+/* table {
+    width: auto;
+} */
+
+td {
+    text-align: center  ;
+}
+
+.filaSelec:hover{
+    background-color: rgb(206, 206, 206);
+    cursor: pointer;
+}

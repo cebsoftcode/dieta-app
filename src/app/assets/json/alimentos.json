@@ -1,0 +1,900 @@
+{
+    "data": [
+        {
+            "nombre": "Fruta (genérico)",
+            "foto": "",
+            "cantidad": "pieza (150 gr.)",
+            "carbos": 1.5,
+            "prote": 0,
+            "grasas": 0
+        },
+        {
+            "nombre": "Almendras",
+            "foto": "",
+            "cantidad": "medio vaso de almendra molida (50 gr.)",
+            "carbos": 0.5,
+            "prote": 1,
+            "grasas": 2.5
+        },
+        {
+            "nombre": "Avellanas",
+            "foto": "",
+            "cantidad": "puñado de 10 unidades (30 gr.)",
+            "carbos": 0.25,
+            "prote": 0.5,
+            "grasas": 1.5
+        },
+        {
+            "nombre": "Nueces",
+            "foto": "",
+            "cantidad": "puñado de 10 nueces (30 gr.)",
+            "carbos": 0.25,
+            "prote": 0.5,
+            "grasas": 2
+        },
+        {
+            "nombre": "Arroz blanco, cocido",
+            "foto": "",
+            "cantidad": "vaso (186 gr.)",
+            "carbos": 5,
+            "prote": 0.5,
+            "grasas": 0
+        },
+        {
+            "nombre": "Arroz blanco, crudo",
+            "foto": "",
+            "cantidad": "vaso (195 gr.)",
+            "carbos": 15,
+            "prote": 1,
+            "grasas": 0
+        },
+        {
+            "nombre": "Avena en copos",
+            "foto": "",
+            "cantidad": "vaso (81 gr.)",
+            "carbos": 4.5,
+            "prote": 1,
+            "grasas": 0.5
+        },
+        {
+            "nombre": "Cereales tipo All-Bran",
+            "foto": "",
+            "cantidad": "vaso (60 gr.)",
+            "carbos": 4,
+            "prote": 0.75,
+            "grasas": 0.25
+        },
+        {
+            "nombre": "Copos de maíz (tipo Corn Flakes)",
+            "foto": "",
+            "cantidad": "vaso (156 gr.)",
+            "carbos": 12,
+            "prote": 1,
+            "grasas": 0.25
+        },
+        {
+            "nombre": "Maíz cocido",
+            "foto": "",
+            "cantidad": "bote pequeño (140 gr.)",
+            "carbos": 1.5,
+            "prote": 0.25,
+            "grasas": 0
+        },
+        {
+            "nombre": "Biscotes integrales (tostadas)",
+            "foto": "",
+            "cantidad": "biscote integral (10 gr.)",
+            "carbos": 0.5,
+            "prote": 0,
+            "grasas": 0
+        },
+        {
+            "nombre": "Pan",
+            "foto": "",
+            "cantidad": "rebanada (29 gr.)",
+            "carbos": 1,
+            "prote": 0.25,
+            "grasas": 0
+        },
+        {
+            "nombre": "Pan de maíz",
+            "foto": "",
+            "cantidad": "rebanada (30 gr.)",
+            "carbos": 1.5,
+            "prote": 0.25,
+            "grasas": 0.5
+        },
+        {
+            "nombre": "Pan de molde",
+            "foto": "",
+            "cantidad": "rebanada (27 gr.)",
+            "carbos": 1,
+            "prote": 0.25,
+            "grasas": 0
+        },
+        {
+            "nombre": "Pan de Viena",
+            "foto": "",
+            "cantidad": "unidad (140 gr.)",
+            "carbos": 6.5,
+            "prote": 1,
+            "grasas": 0.25
+        },
+        {
+            "nombre": "Tortillas tipo burritos o tacos",
+            "foto": "",
+            "cantidad": "Tortilla tipo burrito o taco (60 gr.)",
+            "carbos": 3,
+            "prote": 0.5,
+            "grasas": 0.5
+        },
+        {
+            "nombre": "Tortitas de arroz integral",
+            "foto": "",
+            "cantidad": "tortita (9 gr.)",
+            "carbos": 0.75,
+            "prote": 0,
+            "grasas": 0
+        },
+        {
+            "nombre": "Harina de maíz (blanca)",
+            "foto": "",
+            "cantidad": "cucharada (30 gr.)",
+            "carbos": 2,
+            "prote": 0.25,
+            "grasas": 0
+        },
+        {
+            "nombre": "Harina de trigo",
+            "foto": "",
+            "cantidad": "cucharada (30 gr.)",
+            "carbos": 2,
+            "prote": 0.25,
+            "grasas": 0
+        },
+        {
+            "nombre": "Pasta",
+            "foto": "",
+            "cantidad": "vaso de macarrones (100 gr.)",
+            "carbos": 7,
+            "prote": 1,
+            "grasas": 0
+        },
+        {
+            "nombre": "Pasta (cocida)",
+            "foto": "",
+            "cantidad": "vaso (110 gr.)",
+            "carbos": 3,
+            "prote": 0.75,
+            "grasas": 0
+        },
+        {
+            "nombre": "Garbanzos cocidos",
+            "foto": "",
+            "cantidad": "vaso (164 gr.)",
+            "carbos": 3,
+            "prote": 1,
+            "grasas": 0.5
+        },
+        {
+            "nombre": "Guisantes verdes cocidos",
+            "foto": "",
+            "cantidad": "vaso (160 gr.)",
+            "carbos": 1.5,
+            "prote": 1,
+            "grasas": 0
+        },
+        {
+            "nombre": "Hummus casero",
+            "foto": "",
+            "cantidad": "cucharada (15 gr.)",
+            "carbos": 0.25,
+            "prote": 0,
+            "grasas": 0
+        },
+        {
+            "nombre": "Legumbres, crudas",
+            "foto": "",
+            "cantidad": "vaso (200 gr.)",
+            "carbos": 8.5,
+            "prote": 4,
+            "grasas": 0
+        },
+        {
+            "nombre": "Lentejas cocidas",
+            "foto": "",
+            "cantidad": "vaso (200 gr.)",
+            "carbos": 2,
+            "prote": 1.5,
+            "grasas": 0
+        },
+        {
+            "nombre": "Leche desnatada",
+            "foto": "",
+            "cantidad": "vaso (200 gr.)",
+            "carbos": 1,
+            "prote": 0.75,
+            "grasas": 0
+        },
+        {
+            "nombre": "Leche entera",
+            "foto": "",
+            "cantidad": "vaso (213 gr.)",
+            "carbos": 1,
+            "prote": 0.75,
+            "grasas": 0.75
+        },
+        {
+            "nombre": "Leche semidesnatada",
+            "foto": "",
+            "cantidad": "vaso (200 gr.)",
+            "carbos": 1,
+            "prote": 0.75,
+            "grasas": 0.25
+        },
+        {
+            "nombre": "Mozzarella fresca",
+            "foto": "",
+            "cantidad": "100gr.",
+            "carbos": 0.25,
+            "prote": 2,
+            "grasas": 2
+        },
+        {
+            "nombre": "Quesito",
+            "foto": "",
+            "cantidad": "grupo de 5 quesitos (75 gr.)",
+            "carbos": 0.5,
+            "prote": 0.75,
+            "grasas": 1
+        },
+        {
+            "nombre": "Queso crema",
+            "foto": "",
+            "cantidad": "100gr.",
+            "carbos": 0.5,
+            "prote": 0.75,
+            "grasas": 3
+        },
+        {
+            "nombre": "Queso curado",
+            "foto": "",
+            "cantidad": "cuña (15 gr.)",
+            "carbos": 0,
+            "prote": 0.5,
+            "grasas": 0.5
+        },
+        {
+            "nombre": "Queso en polvo",
+            "foto": "",
+            "cantidad": "cucharada colmada (10 gr.)",
+            "carbos": 0,
+            "prote": 0.25,
+            "grasas": 0.25
+        },
+        {
+            "nombre": "Queso feta",
+            "foto": "",
+            "cantidad": "100gr.",
+            "carbos": 0.5,
+            "prote": 1,
+            "grasas": 2
+        },
+        {
+            "nombre": "Queso fresco 0% tipo Burgos",
+            "foto": "",
+            "cantidad": "tarrina pequeña (72 gr.)",
+            "carbos": 0.25,
+            "prote": 0.75,
+            "grasas": 1
+        },
+        {
+            "nombre": "Queso light tierno 0%",
+            "foto": "",
+            "cantidad": "loncha (25 gr.)",
+            "carbos": 0,
+            "prote": 0.75,
+            "grasas": 0.5
+        },
+        {
+            "nombre": "Queso philadelphia",
+            "foto": "",
+            "cantidad": "cucharada (35 gr.)",
+            "carbos": 0,
+            "prote": 0,
+            "grasas": 1
+        },
+        {
+            "nombre": "Queso philadelphia light 0%",
+            "foto": "",
+            "cantidad": "cucharada (35 gr.)",
+            "carbos": 0,
+            "prote": 0.25,
+            "grasas": 0.5
+        },
+        {
+            "nombre": "Queso rallado",
+            "foto": "",
+            "cantidad": "vaso (100 gr.)",
+            "carbos": 0,
+            "prote": 2.5,
+            "grasas": 2.5
+        },
+        {
+            "nombre": "Queso semicurado",
+            "foto": "",
+            "cantidad": "cuña (15 gr.)",
+            "carbos": 0,
+            "prote": 0.5,
+            "grasas": 0.5
+        },
+        {
+            "nombre": "Queso tierno",
+            "foto": "",
+            "cantidad": "cuña (15 gr.)",
+            "carbos": 0,
+            "prote": 0.5,
+            "grasas": 0.5
+        },
+        {
+            "nombre": "Requesón (queso) bajo en grasa",
+            "foto": "",
+            "cantidad": "cucharada (35 gr.)",
+            "carbos": 0,
+            "prote": 0.5,
+            "grasas": 0
+        },
+        {
+            "nombre": "Rulo de queso de cabra",
+            "foto": "",
+            "cantidad": "rodaja de rulo de queso de cabra (21 gr.)",
+            "carbos": 0,
+            "prote": 0.5,
+            "grasas": 0.5
+        },
+        {
+            "nombre": "Kéfir",
+            "foto": "",
+            "cantidad": "vaso grande (260 gr.)",
+            "carbos": 1,
+            "prote": 1,
+            "grasas": 1
+        },
+        {
+            "nombre": "Yogur de soja natural",
+            "foto": "",
+            "cantidad": "Yogur de soja natural (100 gr.)",
+            "carbos": 1,
+            "prote": 0.5,
+            "grasas": 0.25
+        },
+        {
+            "nombre": "Yogur griego azucarado",
+            "foto": "",
+            "cantidad": "yogur griego azucarado (120 gr.)",
+            "carbos": 1,
+            "prote": 0.5,
+            "grasas": 1
+        },
+        {
+            "nombre": "Yogur griego natural",
+            "foto": "",
+            "cantidad": "Yogur griego natural (120 gr.)",
+            "carbos": 0.5,
+            "prote": 0.5,
+            "grasas": 1
+        },
+        {
+            "nombre": "Yogur natural",
+            "foto": "",
+            "cantidad": "Yogur natural (120 gr.)",
+            "carbos": 0.5,
+            "prote": 0.5,
+            "grasas": 0.5
+        },
+        {
+            "nombre": "Yogur natural de cabra",
+            "foto": "",
+            "cantidad": "yogur natural de cabra (125 gr.)",
+            "carbos": 0.75,
+            "prote": 0.5,
+            "grasas": 0.75
+        },
+        {
+            "nombre": "Yogur natural desnatado 0%",
+            "foto": "",
+            "cantidad": "Yogur natural desnatado (120 gr.)",
+            "carbos": 0.6,
+            "prote": 0.5,
+            "grasas": 0
+        },
+        {
+            "nombre": "Clara de huevo",
+            "foto": "",
+            "cantidad": "clara de 1 huevo (33 gr.)",
+            "carbos": 0,
+            "prote": 0.5,
+            "grasas": 0
+        },
+        {
+            "nombre": "Huevo",
+            "foto": "",
+            "cantidad": "huevo (60 gr.)",
+            "carbos": 0,
+            "prote": 0.75,
+            "grasas": 0.5
+        },
+        {
+            "nombre": "Huevo a la plancha",
+            "foto": "",
+            "cantidad": "huevo (60 gr.)",
+            "carbos": 0,
+            "prote": 0.75,
+            "grasas": 0.75
+        },
+        {
+            "nombre": "Huevo de codorniz",
+            "foto": "",
+            "cantidad": "vaso de huevos de codorniz (8 unidades) (80 gr.)",
+            "carbos": 0,
+            "prote": 1,
+            "grasas": 1
+        },
+        {
+            "nombre": "Tortilla (de un huevo)",
+            "foto": "",
+            "cantidad": "tortilla de 2 huevos (120 gr.)",
+            "carbos": 0,
+            "prote": 1.5,
+            "grasas": 1
+        },
+        {
+            "nombre": "Bacon",
+            "foto": "",
+            "cantidad": "loncha fina (18 gr.)",
+            "carbos": 0,
+            "prote": 0.25,
+            "grasas": 0.75
+        },
+        {
+            "nombre": "Carne blanca",
+            "foto": "",
+            "cantidad": "100gr.",
+            "carbos": 0,
+            "prote": 2,
+            "grasas": 0.25
+        },
+        {
+            "nombre": "Carne de res, magra",
+            "foto": "",
+            "cantidad": "100gr.",
+            "carbos": 0,
+            "prote": 2,
+            "grasas": 0.5
+        },
+        {
+            "nombre": "Carne picada",
+            "foto": "",
+            "cantidad": "vaso (113 gr.)",
+            "carbos": 0,
+            "prote": 2,
+            "grasas": 2
+        },
+        {
+            "nombre": "Carne roja",
+            "foto": "",
+            "cantidad": "100gr.",
+            "carbos": 0,
+            "prote": 2,
+            "grasas": 1
+        },
+        {
+            "nombre": "Conejo",
+            "foto": "",
+            "cantidad": "100gr.",
+            "carbos": 0,
+            "prote": 2,
+            "grasas": 0.5
+        },
+        {
+            "nombre": "Cordero",
+            "foto": "",
+            "cantidad": "100gr.",
+            "carbos": 0,
+            "prote": 2.5,
+            "grasas": 2
+        },
+        {
+            "nombre": "Hígado",
+            "foto": "",
+            "cantidad": "100gr.",
+            "carbos": 0,
+            "prote": 2,
+            "grasas": 0.5
+        },
+        {
+            "nombre": "Hamburguesa de carne blanca",
+            "foto": "",
+            "cantidad": "hamburguesa de carne blanca (113 gr.)",
+            "carbos": 0,
+            "prote": 2,
+            "grasas": 1
+        },
+        {
+            "nombre": "Hamburguesa de carne roja",
+            "foto": "",
+            "cantidad": "hamburguesa de carne roja (113 gr.)",
+            "carbos": 0,
+            "prote": 1.5,
+            "grasas": 1.5
+        },
+        {
+            "nombre": "Jamón cocido (jamón york)",
+            "foto": "",
+            "cantidad": "100gr.",
+            "carbos": 0.25,
+            "prote": 1.5,
+            "grasas": 0
+        },
+        {
+            "nombre": "Jamón serrano",
+            "foto": "",
+            "cantidad": "ración (2 lonchas) (32 gr.)",
+            "carbos": 0,
+            "prote": 1,
+            "grasas": 0.25
+        },
+        {
+            "nombre": "Lacón",
+            "foto": "",
+            "cantidad": "100gr.",
+            "carbos": 0,
+            "prote": 1.5,
+            "grasas": 1
+        },
+        {
+            "nombre": "Pechuga de pavo, embutido",
+            "foto": "",
+            "cantidad": "100gr.",
+            "carbos": 0.5,
+            "prote": 1,
+            "grasas": 0
+        },
+        {
+            "nombre": "Pechuga de pavo, fresca",
+            "foto": "",
+            "cantidad": "filete de pechuga de pavo (85 gr.)",
+            "carbos": 0,
+            "prote": 1.5,
+            "grasas": 0
+        },
+        {
+            "nombre": "Pechuga de pollo",
+            "foto": "",
+            "cantidad": "pechuga de pollo (250 gr.)",
+            "carbos": 0,
+            "prote": 5,
+            "grasas": 0.25
+        },
+        {
+            "nombre": "Salchicha fresca",
+            "foto": "",
+            "cantidad": "salchicha fresca (38 gr.)",
+            "carbos": 0,
+            "prote": 0.5,
+            "grasas": 1
+        },
+        {
+            "nombre": "Solomillo de pollo",
+            "foto": "",
+            "cantidad": "100gr.",
+            "carbos": 0,
+            "prote": 1.5,
+            "grasas": 0.5
+        },
+        {
+            "nombre": "Solomillo de ternera",
+            "foto": "",
+            "cantidad": "pieza de solomillo de ternera (160 gr.)",
+            "carbos": 0,
+            "prote": 3.5,
+            "grasas": 0.75
+        },
+        {
+            "nombre": "Ternera, magra",
+            "foto": "",
+            "cantidad": "filete (113 gr.)",
+            "carbos": 0,
+            "prote": 2.5,
+            "grasas": 0.5
+        },
+        {
+            "nombre": "Anchoas en conserva de aceite de oliva",
+            "foto": "",
+            "cantidad": "100gr.",
+            "carbos": 0,
+            "prote": 2.5,
+            "grasas": 1
+        },
+        {
+            "nombre": "Atún en conserva al natural",
+            "foto": "",
+            "cantidad": "lata pequeña de atún al natural (50 gr.)",
+            "carbos": 0,
+            "prote": 1,
+            "grasas": 0
+        },
+        {
+            "nombre": "Atún fresco",
+            "foto": "",
+            "cantidad": "100gr.",
+            "carbos": 0,
+            "prote": 2,
+            "grasas": 0.5
+        },
+        {
+            "nombre": "Bonito en conserva en aceite",
+            "foto": "",
+            "cantidad": "lata (52 gr.)",
+            "carbos": 0,
+            "prote": 1,
+            "grasas": 0.25
+        },
+        {
+            "nombre": "Caballa en conserva",
+            "foto": "",
+            "cantidad": "lata (70 gr.)",
+            "carbos": 0,
+            "prote": 1.5,
+            "grasas": 0.5
+        },
+        {
+            "nombre": "Pescado",
+            "foto": "",
+            "cantidad": "100gr.",
+            "carbos": 0,
+            "prote": 1.5,
+            "grasas": 0.5
+        },
+        {
+            "nombre": "Pescado azul",
+            "foto": "",
+            "cantidad": "100gr.",
+            "carbos": 0,
+            "prote": 2,
+            "grasas": 1
+        },
+        {
+            "nombre": "Pescado blanco",
+            "foto": "",
+            "cantidad": "100gr.",
+            "carbos": 0,
+            "prote": 1,
+            "grasas": 0
+        },
+        {
+            "nombre": "Salmón ahumado",
+            "foto": "",
+            "cantidad": "loncha (17 gr.)",
+            "carbos": 0,
+            "prote": 0.5,
+            "grasas": 0.25
+        },
+        {
+            "nombre": "Salmón, lomos",
+            "foto": "",
+            "cantidad": "lomo de salmón (125 gr.)",
+            "carbos": 0,
+            "prote": 2.5,
+            "grasas": 1.5
+        },
+        {
+            "nombre": "Sardinas en conserva con aceite",
+            "foto": "",
+            "cantidad": "lata de sardinas con aceite (peso escurrido) (80 gr.)",
+            "carbos": 0,
+            "prote": 2,
+            "grasas": 1
+        },
+        {
+            "nombre": "Berberechos en conserva",
+            "foto": "",
+            "cantidad": "lata (63 gr.)",
+            "carbos": 0,
+            "prote": 0.75,
+            "grasas": 0
+        },
+        {
+            "nombre": "Langostinos cocidos pelados (gambas, camarones)",
+            "foto": "",
+            "cantidad": "vaso (8 unidades) (80 gr.)",
+            "carbos": 0,
+            "prote": 1.5,
+            "grasas": 0
+        },
+        {
+            "nombre": "Mejillón cocido",
+            "foto": "",
+            "cantidad": "lata de mejillones (70 gr.)",
+            "carbos": 0,
+            "prote": 1,
+            "grasas": 0
+        },
+        {
+            "nombre": "Mejillones en lata",
+            "foto": "",
+            "cantidad": "lata de mejillones (peso escurrido) (69 gr.)",
+            "carbos": 0.25,
+            "prote": 1,
+            "grasas": 0
+        },
+        {
+            "nombre": "Pulpo cocido",
+            "foto": "",
+            "cantidad": "vaso de pulpo troceado (100 gr.)",
+            "carbos": 0,
+            "prote": 2.5,
+            "grasas": 0.25
+        },
+        {
+            "nombre": "Sepia",
+            "foto": "",
+            "cantidad": "unidad (80 gr.)",
+            "carbos": 0,
+            "prote": 1,
+            "grasas": 0
+        },
+        {
+            "nombre": "Soja texturizada",
+            "foto": "",
+            "cantidad": "medio vaso (50 gr.)",
+            "carbos": 1.5,
+            "prote": 2.5,
+            "grasas": 0
+        },
+        {
+            "nombre": "Tempeh",
+            "foto": "",
+            "cantidad": "medio paquete (3 barritas) (85 gr.)",
+            "carbos": 0,
+            "prote": 1,
+            "grasas": 0.5
+        },
+        {
+            "nombre": "Tofu firme",
+            "foto": "",
+            "cantidad": "medio paquete (125 gr.)",
+            "carbos": 0,
+            "prote": 2,
+            "grasas": 1
+        },
+        {
+            "nombre": "Boniato",
+            "foto": "",
+            "cantidad": "boniato (250 gr.)",
+            "carbos": 4,
+            "prote": 0.5,
+            "grasas": 0
+        },
+        {
+            "nombre": "Patatas",
+            "foto": "",
+            "cantidad": "patata (213 gr.)",
+            "carbos": 3,
+            "prote": 0.5,
+            "grasas": 0
+        },
+        {
+            "nombre": "Leche de arroz sin endulzante",
+            "foto": "",
+            "cantidad": "vaso (240 gr.)",
+            "carbos": 2,
+            "prote": 0,
+            "grasas": 0.25
+        },
+        {
+            "nombre": "Leche de avena (enriquecida)",
+            "foto": "",
+            "cantidad": "vaso (240 gr.)",
+            "carbos": 1,
+            "prote": 0.25,
+            "grasas": 0.5
+        },
+        {
+            "nombre": "Leche de coco (bebida) fortificada",
+            "foto": "",
+            "cantidad": "vaso (240 gr.)",
+            "carbos": 0.75,
+            "prote": 0,
+            "grasas": 0.5
+        },
+        {
+            "nombre": "Leche de soja sin edulcorar (enriquecida)",
+            "foto": "",
+            "cantidad": "vaso (240 gr.)",
+            "carbos": 0.25,
+            "prote": 0.75,
+            "grasas": 0.5
+        },
+        {
+            "nombre": "Aislado de proteína de soja",
+            "foto": "",
+            "cantidad": "scoop (30 gr.)",
+            "carbos": 0,
+            "prote": 2.5,
+            "grasas": 0
+        },
+        {
+            "nombre": "Aislado de proteína de suero de leche, 80% Whey neutra",
+            "foto": "",
+            "cantidad": "scoop (30 gr.)",
+            "carbos": 0,
+            "prote": 2.5,
+            "grasas": 0.25
+        },
+        {
+            "nombre": "Aceite de coco",
+            "foto": "",
+            "cantidad": "cucharadita (5 gr.)",
+            "carbos": 0,
+            "prote": 0,
+            "grasas": 0.5
+        },
+        {
+            "nombre": "Aceite de girasol",
+            "foto": "",
+            "cantidad": "cucharada (13 gr.)",
+            "carbos": 0,
+            "prote": 0,
+            "grasas": 1
+        },
+        {
+            "nombre": "Aceite de oliva",
+            "foto": "",
+            "cantidad": "cucharada (13 gr.)",
+            "carbos": 0,
+            "prote": 0,
+            "grasas": 1
+        },
+        {
+            "nombre": "Aceitunas Manzanilla sin hueso",
+            "foto": "",
+            "cantidad": "1/3 de vaso (32 gr.)",
+            "carbos": 0,
+            "prote": 0,
+            "grasas": 0.5
+        },
+        {
+            "nombre": "Mantequilla",
+            "foto": "",
+            "cantidad": "stick de 2x4cm (6 gr.)",
+            "carbos": 0,
+            "prote": 0,
+            "grasas": 0.5
+        },
+        {
+            "nombre": "Margarina",
+            "foto": "",
+            "cantidad": "stick de 2x4cm (8 gr.)",
+            "carbos": 0,
+            "prote": 0,
+            "grasas": 0.5
+        },
+        {
+            "nombre": "Azúcar",
+            "foto": "",
+            "cantidad": "cucharadita (4.2 gr.)",
+            "carbos": 0.5,
+            "prote": 0,
+            "grasas": 0
+        },
+        {
+            "nombre": "Miel",
+            "foto": "",
+            "cantidad": "cucharadita (12 gr.)",
+            "carbos": 1,
+            "prote": 0,
+            "grasas": 0
+        }
+    ]
+}
