@@ -5,25 +5,10 @@
     align-items: center;
 }
 
-.requisitos{
-    padding: 1em;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-.requisito{
-    padding: 1em;
-    display:flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
 .tabla-container-pequeño {
     display: flex;
     flex-grow: 0;
-    max-height: 400px;
+    max-height: 350px;
     overflow-y: auto;
     width: auto;
 }
@@ -54,9 +39,71 @@ th {
 
 td {
     text-align: center  ;
+    padding: 0, 1rem
 }
 
 .filaSelec:hover{
     background-color: rgb(230, 230, 230);
     cursor: pointer;
+}
+
+.pulsable:hover{
+    cursor:pointer;
+}
+
+.num{
+    width: 50px;
+}
+
+.colum{
+    display: flex;
+    flex-direction: column;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    &.between{
+        justify-content: space-between;
+    }
+}
+
+.row > input {
+    width: 50px;
+}
+
+.p11{
+    padding: 1rem;
+}
+
+.p10{
+    padding: 1rem, 0;
+}
+
+.p01{
+    padding: 0, 1rem;
+}
+
+.m11{
+    margin: 1rem;
+}
+
+.m10{
+    margin: 1rem, 0;
+}
+
+.m01{
+    margin: 0, 1rem;
+}
+
+.rojo{
+    background-color: rgba(255, 119, 119, 0.452);
+}
+
+.verde {
+    background-color: rgba(124, 255, 119, 0.479);
+}
+
+.amarillo {
+    background-color: rgba(255, 246, 119, 0.438);
 }

@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import * as dataRaw from './assets/json/alimentos.json'
+import * as dataRaw from './assets/json/alimentosCompletos.json'
 import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 
 export interface comida {
   nombre: string;
@@ -15,16 +16,22 @@ export interface comida {
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, CommonModule],
+  imports: [RouterOutlet, CommonModule, FormsModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 
 export class AppComponent implements OnInit {
   title = 'AppDieta';
+  carbos: number = 0;
   totalCarbos: number = 0;
+  difCarbos: number = 0;
+  prote: number = 0;
   totalProte: number = 0;
+  difProte: number = 0;
+  grasas: number = 0;
   totalGrasas: number = 0;
+  difGrasas: number = 0;
   listaComidas: comida[] = [];
   listaFiltro: comida[] = [];
   comidaHoy: comida[] = [];
@@ -39,6 +46,7 @@ export class AppComponent implements OnInit {
     this.listaComidas = Array.isArray(data.data) ? data.data : [];
 
     this.listaFiltro = this.listaComidas
+
   }
 
   inputFruta(event: KeyboardEvent) {
@@ -72,46 +80,95 @@ export class AppComponent implements OnInit {
     switch (key) {
       case "carbos":
         if (this.isDescendenteCarb) {
-          console.log("AAAAAAAAA")
-        lista = this.listaFiltro.sort((a, b) => a.carbos - b.carbos)
-        this.listaFiltro = this.listaFiltro.sort((a, b) => a.carbos - b.carbos)
-        this.isDescendenteCarb = false
-        console.log(event.target)
-        } else{
+          lista = this.listaFiltro.sort((a, b) => a.carbos - b.carbos)
+          this.listaFiltro = this.listaFiltro.sort((a, b) => a.carbos - b.carbos)
+          this.isDescendenteCarb = false
+          console.log(event.target)
+        } else {
           this.listaFiltro = this.listaFiltro.sort((a, b) => b.carbos - a.carbos)
           this.isDescendenteCarb = true
         }; break
       case "prote":
         if (this.isDescendenteProt) {
-          console.log("AAAAAAAAA")
-        lista = this.listaFiltro.sort((a, b) => a.prote - b.prote)
-        this.listaFiltro = this.listaFiltro.sort((a, b) => a.prote - b.prote)
-        this.isDescendenteProt = false
-        console.log(event.target)
-        } else{
+          lista = this.listaFiltro.sort((a, b) => a.prote - b.prote)
+          this.listaFiltro = this.listaFiltro.sort((a, b) => a.prote - b.prote)
+          this.isDescendenteProt = false
+          console.log(event.target)
+        } else {
           this.listaFiltro = this.listaFiltro.sort((a, b) => b.prote - a.prote)
           this.isDescendenteProt = true
         }; break
       case "grasa":
         if (this.isDescendenteGras) {
-          console.log("AAAAAAAAA")
-        lista = this.listaFiltro.sort((a, b) => a.grasas - b.grasas)
-        this.listaFiltro = this.listaFiltro.sort((a, b) => a.grasas - b.grasas)
-        this.isDescendenteGras = false
-        console.log(event.target)
-        } else{
+          lista = this.listaFiltro.sort((a, b) => a.grasas - b.grasas)
+          this.listaFiltro = this.listaFiltro.sort((a, b) => a.grasas - b.grasas)
+          this.isDescendenteGras = false
+          console.log(event.target)
+        } else {
           this.listaFiltro = this.listaFiltro.sort((a, b) => b.grasas - a.grasas)
           this.isDescendenteGras = true
         }; break
     }
   }
 
-  actualizarReq(event: Event, macro: String){
-    console.log("Actualiza estilo")
+  actualizarReq(event: Event, macro: String) {
+    const elemento = event.target as HTMLInputElement
+    switch (macro) {
+      case "carbos": this.carbos = Number(elemento.value); break;
+      case "prote": this.prote = Number(elemento.value); break;
+      case "grasas": this.grasas = Number(elemento.value); break;
+    }
+    this.comprobarDiferencia()
+    console.log("Carbos: " + this.carbos + " // Protes: " + this.prote + " // Grasas: " + this.grasas)
   }
 
-  clickFilaAlimento(event: Event, alimento: comida){
+  comprobarDiferencia() {
+    this.difCarbos = this.carbos - this.totalCarbos
+    this.difProte = this.prote - this.totalProte
+    this.difGrasas = this.grasas - this.totalGrasas
+  }
+
+  //getTotalBackGroundColor(macro: String) {
+    // switch (macro) {
+    //   case "carbos":
+    //     switch (Math.sign(this.totalCarbos)) {
+    //       case 1: return { 'background-color': 'rgba(255, 119, 119, 0.452)'}
+    //       case 0: return { 'background-color': 'rgba(124, 255, 119, 0.479)'}
+    //       case -1: return { 'background-color': 'rgba(255, 246, 119, 0.438)'}
+    //       default: return
+    //     }
+    //   case "prote": switch (Math.sign(this.totalCarbos)) {
+    //     case 1: return { 'background-color': 'rgba(255, 119, 119, 0.452)'}
+    //     case 0: return { 'background-color': 'rgba(124, 255, 119, 0.479)'}
+    //     case -1: return { 'background-color': 'rgba(255, 246, 119, 0.438)'}
+    //     default: return
+    //   }
+    //   case "grasas": switch (Math.sign(this.totalCarbos)) {
+    //     case 1: return { 'background-color': 'rgba(255, 119, 119, 0.452)'}
+    //     case 0: return { 'background-color': 'rgba(124, 255, 119, 0.479)'}
+    //     case -1: return { 'background-color': 'rgba(255, 246, 119, 0.438)'}
+    //     default: return 
+    //   }
+    //   default: return
+    // }
+  //}
+
+  clickFilaAlimento(event: Event, alimento: comida) {
     console.log("Alimento: " + alimento.nombre)
+    this.totalCarbos += alimento.carbos
+    this.totalProte += alimento.prote
+    this.totalGrasas += alimento.grasas
+    this.comidaHoy.push(alimento)
+    this.comprobarDiferencia()
+  }
+
+  eliminarDeLista(i: number) {
+    const alimento = this.comidaHoy[i]
+    this.totalCarbos -= alimento.carbos
+    this.totalProte -= alimento.prote
+    this.totalGrasas -= alimento.grasas
+    this.comidaHoy.splice(i, 1)
+    this.comprobarDiferencia()
   }
 
   // blurFruta(event: Event) {

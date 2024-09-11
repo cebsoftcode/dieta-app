@@ -1,11 +1,10 @@
 <h1>APP PRUEBAS</h1>
 <div>
   <div class="parent-component">
-    <div id="requisitos" class="requisitos">
-      <div class="requisito">
-        <label for="nombre">Alimento:</label>
-        <input type="text" id="nombre" name="nombre" autocomplete="off" (keyup)="inputFruta($event)">
-      </div>
+    <h2>Lista de alimentos</h2>
+    <div class="m11">
+      <label for="nombre" class="m11">Alimento:</label>
+      <input type="text" id="nombre" name="nombre" autocomplete="off" (keyup)="inputFruta($event)">
     </div>
     <div class="tabla-container-pequeño">
       <table>
@@ -29,26 +28,51 @@
           <tr (click)="clickFilaAlimento($event, alimento)" class="filaSelec">
             <td>{{alimento.nombre}}</td>
             <td>{{alimento.cantidad}}</td>
-            <td style="background-color: rgba(255, 246, 119, 0.438);">{{alimento.carbos}}</td>
-            <td style="background-color: rgba(255, 119, 119, 0.452);">{{alimento.prote}}</td>
-            <td style="background-color: rgba(124, 255, 119, 0.479);">{{alimento.grasas}}</td>
+            <td class="amarillo">{{alimento.carbos}}</td>
+            <td class="rojo">{{alimento.prote}}</td>
+            <td class="verde">{{alimento.grasas}}</td>
           </tr>
           }
         </tbody>
       </table>
     </div>
   </div>
-  <div>
-    <div>
-      <h3>Requisitos de la comida</h3>
-      <div>
-        <label for="carboReq">Carbohidratos: </label>
-        <input type="number" name="carboReq" id="carboReq" (change)="actualizarReq($event, 'carbos')" (keyup)="actualizarReq($event, 'carbos')">
-        <label for="proteReq">Proteinas: </label>
-        <input type="number" name="proteReq" id="proteReq" (change)="actualizarReq($event, 'prote')" (keyup)="actualizarReq($event, 'prote')">
-        <label for="grasaReq">Grasas: </label>
-        <input type="number" name="grasaReq" id="grasaReq" (change)="actualizarReq($event, 'grasas')" (keyup)="actualizarReq($event, 'grasas')">
-      </div>
-    </div>
+  <div class="parent-component m11">
+    <h2>Alimentos de la comida</h2>
+    <table>
+      <tr>
+        <td colspan="3">Requisitos de la comida: </td>
+        <td><input type="number" name="carboReq" id="carboReq" (change)="actualizarReq($event, 'carbos')"
+            (keyup)="actualizarReq($event, 'carbos')" class="num" ngModel="{{carbos}}"></td>
+        <td><input type="number" name="proteReq" id="proteReq" (change)="actualizarReq($event, 'prote')"
+            (keyup)="actualizarReq($event, 'prote')" class="num" ngModel="{{prote}}"></td>
+        <td><input type="number" name="grasaReq" id="grasaReq" (change)="actualizarReq($event, 'grasas')"
+            (keyup)="actualizarReq($event, 'grasas')" class="num" ngModel="{{grasas}}"></td>
+      </tr>
+      @if (comidaHoy.length == 0){
+      <tr>
+        <td colspan="6" style="background-color: rgba(255, 0, 0, 0.377);"><b>Todavía no has seleccionado ningún alimento</b></td>
+      </tr>
+      } @else {
+      @for (comida of comidaHoy; track $index) {
+      <tr>
+        <td><span class="uil-minus-circle pulsable" (click)="eliminarDeLista($index)"></span></td>
+        <td style="width: 366.13px;">{{comida.nombre}}</td>
+        <td style="width: 328.64px;">{{comida.cantidad}}</td>
+        <td class="amarillo">{{comida.carbos}}</td>
+        <td class="rojo">{{comida.prote}}</td>
+        <td class="verde">{{comida.grasas}}</td>
+      </tr>
+      }
+      }
+      <tr>
+        <td style="background-color: rgb(219, 219, 219);" colspan="3">Macros totales: </td>
+        <td [ngClass]="{'rojo': difCarbos > 0, 'verde' :difCarbos == 0.0, 'amarillo' : difCarbos < 0}">{{totalCarbos}}
+        </td>
+        <td [ngClass]="{'rojo': difProte > 0, 'verde' :difProte == 0.0, 'amarillo' : difProte < 0}">{{totalProte}}</td>
+        <td [ngClass]="{'rojo': difGrasas > 0, 'verde' :difGrasas == 0.0, 'amarillo' : difGrasas < 0}">{{totalGrasas}}
+        </td>
+      </tr>
+    </table>
   </div>
 </div>
