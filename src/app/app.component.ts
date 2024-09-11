@@ -45,7 +45,7 @@ export class AppComponent implements OnInit {
     console.log("Data: " + JSON.stringify(data.data, null, 2))
     this.listaComidas = Array.isArray(data.data) ? data.data : [];
 
-    this.listaFiltro = this.listaComidas
+    this.listaFiltro = [...this.listaComidas]
 
   }
 
@@ -54,33 +54,16 @@ export class AppComponent implements OnInit {
     const inputText = event.target as HTMLInputElement
     if (inputText.value == "") {
       console.log("VACIO")
-      this.listaFiltro = this.listaComidas
+      this.resetearFiltros()
     } else {
-      this.listaFiltro = this.listaComidas.filter(comida => comida.nombre.toLowerCase().includes(inputText.value.toLowerCase()));
+      this.listaFiltro = [...this.listaComidas].filter(comida => comida.nombre.toLowerCase().includes(inputText.value.toLowerCase()));
     }
   }
 
-  // soloNum(event: KeyboardEvent) {
-  //   const allowedKeys = [
-  //     'Backspace', 'ArrowLeft', 'ArrowRight', 'Tab', 'Delete', '.', ','
-  //   ];
-  //   if (!/^[0-9]$/.test(event.key) && !allowedKeys.includes(event.key)) {
-  //     event.preventDefault()
-  //   } else {
-  //     if (event.key == ",") {
-  //       event.preventDefault()
-  //       const elemento = event.target as HTMLInputElement
-  //       elemento.value = elemento.value + "."
-  //     }
-  //   }
-  // }
-
   filtrarMacros(key: String, event: Event) {
-    let lista;
     switch (key) {
       case "carbos":
         if (this.isDescendenteCarb) {
-          lista = this.listaFiltro.sort((a, b) => a.carbos - b.carbos)
           this.listaFiltro = this.listaFiltro.sort((a, b) => a.carbos - b.carbos)
           this.isDescendenteCarb = false
           console.log(event.target)
@@ -90,7 +73,6 @@ export class AppComponent implements OnInit {
         }; break
       case "prote":
         if (this.isDescendenteProt) {
-          lista = this.listaFiltro.sort((a, b) => a.prote - b.prote)
           this.listaFiltro = this.listaFiltro.sort((a, b) => a.prote - b.prote)
           this.isDescendenteProt = false
           console.log(event.target)
@@ -100,7 +82,6 @@ export class AppComponent implements OnInit {
         }; break
       case "grasa":
         if (this.isDescendenteGras) {
-          lista = this.listaFiltro.sort((a, b) => a.grasas - b.grasas)
           this.listaFiltro = this.listaFiltro.sort((a, b) => a.grasas - b.grasas)
           this.isDescendenteGras = false
           console.log(event.target)
@@ -109,6 +90,15 @@ export class AppComponent implements OnInit {
           this.isDescendenteGras = true
         }; break
     }
+  }
+
+  resetearFiltros(){
+    this.listaFiltro = [...this.listaComidas]
+    const inputNombre = document.getElementById("nombre") as HTMLInputElement
+    this.isDescendenteCarb = null;
+    this.isDescendenteProt = null;
+    this.isDescendenteGras = null;
+    inputNombre.value = ""
   }
 
   actualizarReq(event: Event, macro: String) {
@@ -128,31 +118,6 @@ export class AppComponent implements OnInit {
     this.difGrasas = this.grasas - this.totalGrasas
   }
 
-  //getTotalBackGroundColor(macro: String) {
-    // switch (macro) {
-    //   case "carbos":
-    //     switch (Math.sign(this.totalCarbos)) {
-    //       case 1: return { 'background-color': 'rgba(255, 119, 119, 0.452)'}
-    //       case 0: return { 'background-color': 'rgba(124, 255, 119, 0.479)'}
-    //       case -1: return { 'background-color': 'rgba(255, 246, 119, 0.438)'}
-    //       default: return
-    //     }
-    //   case "prote": switch (Math.sign(this.totalCarbos)) {
-    //     case 1: return { 'background-color': 'rgba(255, 119, 119, 0.452)'}
-    //     case 0: return { 'background-color': 'rgba(124, 255, 119, 0.479)'}
-    //     case -1: return { 'background-color': 'rgba(255, 246, 119, 0.438)'}
-    //     default: return
-    //   }
-    //   case "grasas": switch (Math.sign(this.totalCarbos)) {
-    //     case 1: return { 'background-color': 'rgba(255, 119, 119, 0.452)'}
-    //     case 0: return { 'background-color': 'rgba(124, 255, 119, 0.479)'}
-    //     case -1: return { 'background-color': 'rgba(255, 246, 119, 0.438)'}
-    //     default: return 
-    //   }
-    //   default: return
-    // }
-  //}
-
   clickFilaAlimento(event: Event, alimento: comida) {
     console.log("Alimento: " + alimento.nombre)
     this.totalCarbos += alimento.carbos
@@ -171,12 +136,12 @@ export class AppComponent implements OnInit {
     this.comprobarDiferencia()
   }
 
-  // blurFruta(event: Event) {
-  //   console.log("SDFSF")
-  // }
-
-  actualizarListaFiltro(listaComida: comida[]) {
-    this.listaComidas = listaComida
+  buscarAlimentosConDif(){
+    this.resetearFiltros()
+    this.listaFiltro = [...this.listaComidas].filter(comida =>
+      comida.carbos <= this.difCarbos &&
+      comida.prote <= this.difProte &&
+      comida.grasas <= this.difGrasas
+    );
   }
-
 }
